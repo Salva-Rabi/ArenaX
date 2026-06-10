@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "ShadowPro",
+    "game": "Valorant",
+    "rank": "Diamond",
+    "score": 2500,
+    "wins": 22,
+    "losses": 5,
+    "country": "Pakistan",
+    "emoji": "🎯"
+  },
+  {
+    "id": 2,
+    "name": "NinjaX",
+    "game": "PUBG",
+    "rank": "Ace",
+    "score": 3200,
+    "wins": 30,
+    "losses": 3,
+    "country": "Pakistan",
+    "emoji": "🔫"
+  },
+  {
+    "id": 3,
+    "name": "BlazeFire",
+    "game": "Fortnite",
+    "rank": "Elite",
+    "score": 2800,
+    "wins": 25,
+    "losses": 6,
+    "country": "Pakistan",
+    "emoji": "🔥"
+  },
+  {
+    "id": 4,
+    "name": "CyberHawk",
+    "game": "Call of Duty",
+    "rank": "Platinum",
+    "score": 2200,
+    "wins": 18,
+    "losses": 9,
+    "country": "Pakistan",
+    "emoji": "🦅"
+  },
+  {
+    "id": 5,
+    "name": "StormKing",
+    "game": "PUBG",
+    "rank": "Diamond",
+    "score": 2900,
+    "wins": 27,
+    "losses": 4,
+    "country": "Pakistan",
+    "emoji": "⚡"
+  },
+  {
+    "id": 6,
+    "name": "IronGhost",
+    "game": "Valorant",
+    "rank": "Gold",
+    "score": 1800,
+    "wins": 15,
+    "losses": 12,
+    "country": "Pakistan",
+    "emoji": "👻"
+  },
+  {
+    "id": 7,
+    "name": "ZeroX",
+    "game": "Fortnite",
+    "rank": "Silver",
+    "score": 1400,
+    "wins": 10,
+    "losses": 18,
+    "country": "Pakistan",
+    "emoji": "❄️"
+  },
+  {
+    "id": 8,
+    "name": "AceNova",
+    "game": "Call of Duty",
+    "rank": "Ace",
+    "score": 3100,
+    "wins": 28,
+    "losses": 4,
+    "country": "Pakistan",
+    "emoji": "🌟"
+  },
+  {
+    "id": 9,
+    "name": "PhantomGG",
+    "game": "FIFA",
+    "rank": "Gold",
+    "score": 1900,
+    "wins": 16,
+    "losses": 11,
+    "country": "Pakistan",
+    "emoji": "⚽"
+  },
+  {
+    "id": 10,
+    "name": "DragonFist",
+    "game": "Apex Legends",
+    "rank": "Platinum",
+    "score": 2400,
+    "wins": 20,
+    "losses": 8,
+    "country": "Pakistan",
+    "emoji": "🐉"
+  },
+  {
+    "id": 11,
+    "name": "QuantumX",
+    "game": "Valorant",
+    "rank": "Diamond",
+    "score": 2700,
+    "wins": 24,
+    "losses": 5,
+    "country": "Pakistan",
+    "emoji": "⚛️"
+  },
+  {
+    "id": 12,
+    "name": "BladeRunner",
+    "game": "PUBG",
+    "rank": "Elite",
+    "score": 2600,
+    "wins": 23,
+    "losses": 6,
+    "country": "Pakistan",
+    "emoji": "⚔️"
+  }
+]

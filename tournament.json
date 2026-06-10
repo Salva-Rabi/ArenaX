@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "ArenaX Season 5",
+    "game": "Valorant",
+    "prize": "$5,000",
+    "entry_fee": 25,
+    "date": "Jun 20, 2025",
+    "slots": 10,
+    "filled": 7,
+    "status": "Open",
+    "icon": "🎯"
+  },
+  {
+    "id": 2,
+    "name": "PUBG Battle Royale Cup",
+    "game": "PUBG",
+    "prize": "$3,000",
+    "entry_fee": 25,
+    "date": "Jun 22, 2025",
+    "slots": 10,
+    "filled": 4,
+    "status": "Open",
+    "icon": "🔫"
+  },
+  {
+    "id": 3,
+    "name": "Fortnite Frenzy Open",
+    "game": "Fortnite",
+    "prize": "$2,000",
+    "entry_fee": 25,
+    "date": "Jun 25, 2025",
+    "slots": 10,
+    "filled": 9,
+    "status": "Almost Full",
+    "icon": "🔥"
+  },
+  {
+    "id": 4,
+    "name": "CoD Warzone Championship",
+    "game": "Call of Duty",
+    "prize": "$4,000",
+    "entry_fee": 25,
+    "date": "Jun 28, 2025",
+    "slots": 10,
+    "filled": 2,
+    "status": "Open",
+    "icon": "💥"
+  },
+  {
+    "id": 5,
+    "name": "FIFA 25 Ultimate Cup",
+    "game": "FIFA 25",
+    "prize": "$1,500",
+    "entry_fee": 25,
+    "date": "Jul 1, 2025",
+    "slots": 10,
+    "filled": 5,
+    "status": "Open",
+    "icon": "⚽"
+  }
+]

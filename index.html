@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArenaX – Elite Gaming Tournament Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">⚔️ ArenaX</div>
+  <div class="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+    <a onclick="showPage('players')" id="nav-players">Players</a>
+    <a onclick="showPage('tournament')" id="nav-tournament">Tournaments</a>
+    <a onclick="showPage('leaderboard')" id="nav-leaderboard">Leaderboard</a>
+    <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+    <a onclick="showPage('admin')" id="nav-admin">Admin</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" onclick="cycleTheme()">🎨 Theme</button>
+    <div id="authNavArea">
+      <button class="btn-nav" onclick="showPage('signup')">Sign Up</button>
+      <button class="btn-nav" onclick="showPage('login')" style="margin-left:0.3rem">Login</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🏆 Season 2026 — Now Live</div>
+      <h1>Compete. <span>Dominate.</span><br>Conquer.</h1>
+      <p>ArenaX is Pakistan's premier gaming tournament platform. Battle top players, win massive prizes, and claim your throne on the leaderboard.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('tournament')">⚔️ Join Tournament</button>
+        <button class="btn-outline" onclick="showPage('players')">👥 View Players</button>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-num">1,200+</div><div class="stat-label">Active Players</div></div>
+        <div class="stat-item"><div class="stat-num">48</div><div class="stat-label">Tournaments</div></div>
+        <div class="stat-item"><div class="stat-num">$50K</div><div class="stat-label">Prize Pool</div></div>
+        <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Games</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">About ArenaX</div>
+    <p class="section-sub">The ultimate competitive gaming platform built for champions</p>
+    <div class="about-grid">
+      <div class="about-card"><div class="about-icon">🎮</div><h3>Multiple Games</h3><p>Compete in PUBG, Valorant, Fortnite, FIFA, Call of Duty, and more top titles.</p></div>
+      <div class="about-card"><div class="about-icon">💰</div><h3>Massive Prizes</h3><p>Win real cash prizes, gaming gear, and exclusive titles. Top players earn big.</p></div>
+      <div class="about-card"><div class="about-icon">🌐</div><h3>Live Tournaments</h3><p>24/7 tournaments running worldwide. Register, compete, and climb the rankings.</p></div>
+      <div class="about-card"><div class="about-icon">📊</div><h3>Real Stats</h3><p>Track your performance, K/D ratio, win rate, and climb the global leaderboard.</p></div>
+      <div class="about-card"><div class="about-icon">🤝</div><h3>Fair Play</h3><p>Anti-cheat systems, verified players, and strict code of conduct enforced.</p></div>
+      <div class="about-card"><div class="about-icon">📱</div><h3>Any Device</h3><p>Compete from mobile, PC or console. Our platform supports all major platforms.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Tournament Schedule</div>
+    <p class="section-sub">Upcoming and ongoing matches</p>
+    <table class="schedule-table">
+      <thead>
+        <tr><th>#</th><th>Match</th><th>Game</th><th>Date</th><th>Prize</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>ShadowPro vs NinjaX</td><td>Valorant</td><td>Jun 10, 2025</td><td>$500</td><td><span class="badge badge-done">Completed</span></td></tr>
+        <tr><td>2</td><td>BladeStorm vs CyberX</td><td>PUBG</td><td>Jun 12, 2025</td><td>$800</td><td><span class="badge badge-live">Live</span></td></tr>
+        <tr><td>3</td><td>PhantomGG vs AceKing</td><td>Fortnite</td><td>Jun 14, 2025</td><td>$600</td><td><span class="badge badge-upcoming">Upcoming</span></td></tr>
+        <tr><td>4</td><td>NovaStar vs ZeroX</td><td>Call of Duty</td><td>Jun 16, 2025</td><td>$1,000</td><td><span class="badge badge-upcoming">Upcoming</span></td></tr>
+        <tr><td>5</td><td>StormRaider vs IronFist</td><td>FIFA 25</td><td>Jun 18, 2025</td><td>$400</td><td><span class="badge badge-upcoming">Upcoming</span></td></tr>
+        <tr class="final-row"><td>🏆</td><td>GRAND FINAL — Champion's Match</td><td>All Games</td><td>Jun 25, 2025</td><td>$10,000</td><td><span class="badge badge-final">GRAND FINAL</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-logo">⚔️ ArenaX</div>
+    <p>© 2026 ArenaX Gaming Hub. All rights reserved. | Pakistan's #1 Tournament Platform</p>
+    <p style="margin-top:0.3rem">📧 info@arenax.pk | 📞 +92-300-ARENAX</p>
+  </footer>
+</div>
+
+<!-- ===== PLAYERS PAGE ===== -->
+<div class="page" id="page-players">
+  <div class="section">
+    <div class="section-title">Players</div>
+    <p class="section-sub">Search, filter, and discover top competitive players</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Search by player name..." oninput="filterPlayers()">
+      <select id="gameFilter" onchange="filterPlayers()">
+        <option value="">All Games</option>
+        <option value="Valorant">Valorant</option>
+        <option value="PUBG">PUBG</option>
+        <option value="Fortnite">Fortnite</option>
+        <option value="Call of Duty">Call of Duty</option>
+        <option value="FIFA">FIFA</option>
+        <option value="Apex Legends">Apex Legends</option>
+      </select>
+      <select id="rankFilter" onchange="filterPlayers()">
+        <option value="">All Ranks</option>
+        <option value="Diamond">💎 Diamond</option>
+        <option value="Platinum">🔮 Platinum</option>
+        <option value="Gold">🥇 Gold</option>
+        <option value="Silver">🥈 Silver</option>
+        <option value="Ace">🎯 Ace</option>
+        <option value="Elite">⭐ Elite</option>
+      </select>
+    </div>
+    <div class="players-grid" id="playersGrid"></div>
+  </div>
+  <footer>
+    <div class="footer-logo">⚔️ ArenaX</div>
+    <p>© 2026 ArenaX Gaming Hub. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ===== TOURNAMENT PAGE ===== -->
+<div class="page" id="page-tournament">
+  <div class="section">
+    <div class="section-title">Tournaments</div>
+    <p class="section-sub">Active tournaments — register now before slots fill up</p>
+    <div class="tournament-grid" id="tournamentGrid"></div>
+
+    <div class="section-title" style="margin-top:2rem">Register for Tournament</div>
+    <p class="section-sub">Fill the form below to reserve your spot</p>
+    <div class="reg-form-box">
+      <form id="regForm" onsubmit="submitRegistration(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="regFname" placeholder="Ahmad">
+            <div class="error-msg" id="err-regFname">First name required</div>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="regLname" placeholder="Khan">
+            <div class="error-msg" id="err-regLname">Last name required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="regEmail" placeholder="player@email.com">
+          <div class="error-msg" id="err-regEmail">Valid email required</div>
+        </div>
+        <div class="form-group">
+          <label>Game *</label>
+          <select id="regGame">
+            <option value="">Select Game</option>
+            <option>Valorant</option><option>PUBG</option>
+            <option>Fortnite</option><option>Call of Duty</option>
+            <option>FIFA 25</option><option>Apex Legends</option>
+          </select>
+          <div class="error-msg" id="err-regGame">Please select a game</div>
+        </div>
+        <div class="form-group">
+          <label>Select Tournament *</label>
+          <select id="regTournament">
+            <option value="">Choose Tournament</option>
+            <option>ArenaX Season 5 — Valorant</option>
+            <option>PUBG Battle Royale Cup</option>
+            <option>Fortnite Frenzy Open</option>
+            <option>CoD Warzone Championship</option>
+            <option>FIFA 25 Ultimate Cup</option>
+          </select>
+          <div class="error-msg" id="err-regTournament">Please select a tournament</div>
+        </div>
+
+        <div class="form-group">
+          <label>Registration Fee: <strong style="color:var(--accent3)">$25 USD</strong></label>
+          <p style="font-size:0.8rem;color:var(--text2);margin-bottom:0.8rem">Select payment method:</p>
+          <div class="payment-methods">
+            <div class="pay-option" onclick="selectPayment(this,'jazzcash')">
+              <div class="pay-icon">📱</div><span>JazzCash</span>
+            </div>
+            <div class="pay-option" onclick="selectPayment(this,'easypaisa')">
+              <div class="pay-icon">💳</div><span>EasyPaisa</span>
+            </div>
+            <div class="pay-option" onclick="selectPayment(this,'stripe')">
+              <div class="pay-icon">💰</div><span>Stripe</span>
+            </div>
+            <div class="pay-option" onclick="selectPayment(this,'usdt')">
+              <div class="pay-icon">₿</div><span>USDT</span>
+            </div>
+          </div>
+          <div class="error-msg" id="err-payment">Please select payment method</div>
+          <input type="hidden" id="selectedPayment">
+        </div>
+
+        <div id="paymentDetails" style="display:none">
+          <div class="form-group">
+            <label id="payDetailLabel">Transaction ID / Reference *</label>
+            <input type="text" id="transactionId" placeholder="Enter transaction reference">
+            <div class="error-msg" id="err-transaction">Transaction ID required</div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width:100%;margin-top:0.5rem">⚔️ Register &amp; Pay</button>
+      </form>
+    </div>
+
+    <div class="mt-2">
+      <div class="section-title" style="margin-top:2rem">Registered Participants</div>
+      <p class="section-sub">Total: <strong id="participantCount">0</strong> / 10 slots</p>
+      <div class="progress-bar" style="max-width:400px;height:10px;margin-bottom:1.5rem">
+        <div class="progress-fill" id="participantProgress" style="width:0%"></div>
+      </div>
+      <table class="schedule-table" id="participantsTable">
+        <thead><tr><th>#</th><th>Name</th><th>Game</th><th>Tournament</th><th>Payment</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody id="participantsList"></tbody>
+      </table>
+    </div>
+  </div>
+  <footer><div class="footer-logo">⚔️ ArenaX</div><p>© 2026 ArenaX Gaming Hub. All rights reserved.</p></footer>
+</div>
+
+<!-- ===== LEADERBOARD PAGE ===== -->
+<div class="page" id="page-leaderboard">
+  <div class="section">
+    <div class="section-title">Leaderboard</div>
+    <p class="section-sub">Real-time rankings sorted by score — top player highlighted</p>
+
+    <table class="leaderboard-table" id="leaderboardTable">
+      <thead>
+        <tr><th>Rank</th><th>Player</th><th>Game</th><th>Score</th><th>W/L</th></tr>
+      </thead>
+      <tbody id="leaderboardBody"></tbody>
+    </table>
+
+    <div class="add-score-box">
+      <h3>➕ Add Player Score</h3>
+      <div class="add-score-row">
+        <input type="text" id="lbName" placeholder="Player Name">
+        <input type="text" id="lbGame" placeholder="Game">
+        <input type="number" id="lbScore" placeholder="Score">
+        <button class="btn-primary" onclick="addLeaderboardEntry()" style="padding:0.65rem 1.2rem">Add</button>
+      </div>
+    </div>
+  </div>
+  <footer><div class="footer-logo">⚔️ ArenaX</div><p>© 2026 ArenaX Gaming Hub. All rights reserved.</p></footer>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div class="page" id="page-contact">
+  <div class="section">
+    <div class="section-title">Contact Us</div>
+    <p class="section-sub">Have questions? Our team is ready to help you</p>
+    <div class="contact-grid">
+      <div class="reg-form-box">
+        <form onsubmit="submitContact(event)">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="cName" placeholder="Full Name">
+            <div class="error-msg" id="err-cName">Name required</div>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" id="cEmail" placeholder="your@email.com">
+            <div class="error-msg" id="err-cEmail">Valid email required</div>
+          </div>
+          <div class="form-group">
+            <label>Subject *</label>
+            <input type="text" id="cSubject" placeholder="How can we help?">
+            <div class="error-msg" id="err-cSubject">Subject required</div>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea id="cMessage" rows="5" placeholder="Write your message here..."></textarea>
+            <div class="error-msg" id="err-cMessage">Message required</div>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%">📩 Send Message</button>
+        </form>
+      </div>
+      <div>
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13278.678254041055!2d73.04788!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f3e7b63b2f0!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1699999999999"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+        <div style="margin-top:1rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.2rem">
+          <p><strong>📍</strong> Islamabad, Pakistan</p>
+          <p style="margin-top:0.5rem"><strong>📧</strong> info@arenax.pk</p>
+          <p style="margin-top:0.5rem"><strong>📞</strong> +92-300-ARENAX</p>
+          <p style="margin-top:0.5rem"><strong>⏰</strong> Mon–Sat: 9AM – 6PM PKT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="footer-logo">⚔️ ArenaX</div><p>© 2026 ArenaX Gaming Hub. All rights reserved.</p></footer>
+</div>
+
+<!-- ===== SIGNUP PAGE ===== -->
+<div class="page" id="page-signup">
+  <div class="auth-page">
+    <div class="auth-box">
+      <h2>Create Account</h2>
+      <p>Join ArenaX and start competing today</p>
+      <form id="signupForm" onsubmit="handleSignup(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="sfname" placeholder="Ahmad">
+            <div class="error-msg" id="err-sfname">Required</div>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="slname" placeholder="Khan">
+            <div class="error-msg" id="err-slname">Required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Age *</label>
+          <input type="number" id="sage" placeholder="18" min="13" max="99">
+          <div class="error-msg" id="err-sage">Valid age required (13–99)</div>
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="text" id="semail" placeholder="player@email.com" oninput="validateEmailRealTime()">
+          <div class="error-msg" id="err-semail"></div>
+          <div class="success-msg" id="ok-semail">✅ Valid email</div>
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <div class="pw-wrapper">
+            <input type="password" id="spw" placeholder="Min 8 chars" oninput="checkStrength()">
+            <span class="pw-toggle" onclick="togglePw('spw','toggle-spw')" id="toggle-spw">🙈</span>
+          </div>
+          <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+          <div class="strength-text" id="strengthText"></div>
+          <div class="error-msg" id="err-spw"></div>
+        </div>
+        <div class="form-group">
+          <label>Confirm Password *</label>
+          <div class="pw-wrapper">
+            <input type="password" id="spw2" placeholder="Repeat password" oninput="checkConfirm()">
+            <span class="pw-toggle" onclick="togglePw('spw2','toggle-spw2')" id="toggle-spw2">🙈</span>
+          </div>
+          <div class="error-msg" id="err-spw2"></div>
+          <div class="success-msg" id="ok-spw2">✅ Passwords match</div>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%">Create Account</button>
+        <div class="auth-switch">Already have an account? <a onclick="showPage('login')">Sign In</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LOGIN PAGE ===== -->
+<div class="page" id="page-login">
+  <div class="auth-page">
+    <div class="auth-box">
+      <h2>Welcome Back</h2>
+      <p>Sign in to your ArenaX account</p>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="text" id="lemail" placeholder="player@email.com">
+          <div class="error-msg" id="err-lemail">Email required</div>
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <div class="pw-wrapper">
+            <input type="password" id="lpw" placeholder="Enter password">
+            <span class="pw-toggle" onclick="togglePw('lpw','toggle-lpw')" id="toggle-lpw">🙈</span>
+          </div>
+          <div class="error-msg" id="err-lpw">Password required</div>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%">🔓 Sign In</button>
+        <div class="auth-switch">Don't have an account? <a onclick="showPage('signup')">Sign Up</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROFILE PAGE ===== -->
+<div class="page" id="page-profile">
+  <div class="profile-page">
+    <div class="profile-header">
+      <div class="profile-avatar" id="profileAvatar">👤</div>
+      <div class="profile-info">
+        <h2 id="profileName">Player Name</h2>
+        <p id="profileEmail">email@example.com</p>
+        <span class="profile-badge" id="profileBadge">🎮 Gamer</span>
+      </div>
+    </div>
+    <div class="profile-grid">
+      <div class="profile-stat-card"><div class="pstat-num" id="pTournaments">0</div><div class="pstat-label">Tournaments Joined</div></div>
+      <div class="profile-stat-card"><div class="pstat-num" id="pWins">0</div><div class="pstat-label">Wins</div></div>
+      <div class="profile-stat-card"><div class="pstat-num" id="pScore">0</div><div class="pstat-label">Total Score</div></div>
+      <div class="profile-stat-card"><div class="pstat-num" id="pRank">#—</div><div class="pstat-label">Global Rank</div></div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem">
+      <h3 style="margin-bottom:1rem;font-weight:700">🎨 Personalized Theme</h3>
+      <div class="theme-chooser">
+        <div class="theme-chip" onclick="setTheme('dark')">🌑 Dark</div>
+        <div class="theme-chip" onclick="setTheme('light')">☀️ Light</div>
+        <div class="theme-chip" onclick="setTheme('neon')">⚡ Neon</div>
+      </div>
+    </div>
+    <button class="btn-outline" onclick="logout()" style="color:var(--danger);border-color:var(--danger)">🚪 Sign Out</button>
+  </div>
+  <footer><div class="footer-logo">⚔️ ArenaX</div><p>© 2026 ArenaX Gaming Hub. All rights reserved.</p></footer>
+</div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<div class="page" id="page-admin">
+  <div id="adminLoginGate">
+    <div class="auth-page">
+      <div class="auth-box">
+        <h2>Admin Access</h2>
+        <p>Enter admin credentials to continue</p>
+        <form onsubmit="adminLogin(event)">
+          <div class="form-group">
+            <label>Admin Email</label>
+            <input type="text" id="adminEmail" placeholder="admin@arenax.pk">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="pw-wrapper">
+              <input type="password" id="adminPw" placeholder="admin123">
+              <span class="pw-toggle" onclick="togglePw('adminPw','tAdminPw')" id="tAdminPw">🙈</span>
+            </div>
+          </div>
+          <p style="font-size:0.75rem;color:var(--text2);margin-bottom:0.8rem">Demo: admin@arenax.pk / admin123</p>
+          <button type="submit" class="btn-primary" style="width:100%">🔐 Login as Admin</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="adminDashboard" style="display:none">
+    <div class="admin-layout">
+      <div class="admin-sidebar">
+        <h3>Admin Panel</h3>
+        <div class="admin-nav-item active" onclick="adminSection('users')">👥 Users</div>
+        <div class="admin-nav-item" onclick="adminSection('participants')">⚔️ Participants</div>
+        <div class="admin-nav-item" onclick="adminSection('contacts')">📩 Messages</div>
+        <div class="admin-nav-item" onclick="adminSection('leaderboard')">🏆 Leaderboard</div>
+        <div style="margin-top:auto;padding-top:2rem">
+          <div class="admin-nav-item" onclick="adminLogout()" style="color:var(--danger)">🚪 Logout</div>
+        </div>
+      </div>
+      <div class="admin-main">
+        <div class="admin-cards">
+          <div class="admin-stat"><div class="astat-num" id="aStatUsers">0</div><div class="astat-label">Total Users</div></div>
+          <div class="admin-stat"><div class="astat-num" id="aStatPart">0</div><div class="astat-label">Participants</div></div>
+          <div class="admin-stat"><div class="astat-num" id="aStatMsg">0</div><div class="astat-label">Messages</div></div>
+          <div class="admin-stat"><div class="astat-num" id="aStatLb">0</div><div class="astat-label">Leaderboard</div></div>
+        </div>
+
+        <div id="admin-users">
+          <h3 style="margin-bottom:1rem;font-weight:700">Registered Users</h3>
+          <button class="btn-primary" onclick="openAddUserModal()" style="margin-bottom:1rem;padding:0.5rem 1rem;font-size:0.85rem">+ Add User</button>
+          <table class="admin-table">
+            <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Age</th><th>Joined</th><th>Actions</th></tr></thead>
+            <tbody id="adminUsersTable"></tbody>
+          </table>
+        </div>
+
+        <div id="admin-participants" style="display:none">
+          <h3 style="margin-bottom:1rem;font-weight:700">Tournament Participants</h3>
+          <table class="admin-table">
+            <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Game</th><th>Tournament</th><th>Payment</th><th>Actions</th></tr></thead>
+            <tbody id="adminPartTable"></tbody>
+          </table>
+        </div>
+
+        <div id="admin-contacts" style="display:none">
+          <h3 style="margin-bottom:1rem;font-weight:700">Contact Messages</h3>
+          <table class="admin-table">
+            <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Actions</th></tr></thead>
+            <tbody id="adminContactTable"></tbody>
+          </table>
+        </div>
+
+        <div id="admin-leaderboard" style="display:none">
+          <h3 style="margin-bottom:1rem;font-weight:700">Leaderboard Management</h3>
+          <table class="admin-table">
+            <thead><tr><th>Rank</th><th>Player</th><th>Game</th><th>Score</th><th>Actions</th></tr></thead>
+            <tbody id="adminLbTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="modalTitle">Edit User</h3>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast">
+  <span id="toastIcon">✅</span>
+  <span id="toastMsg">Success!</span>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
